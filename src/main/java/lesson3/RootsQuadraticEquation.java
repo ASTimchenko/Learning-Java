@@ -4,7 +4,7 @@ package lesson3;
 import java.util.Scanner;
 
    public class RootsQuadraticEquation {
-       //Вввод коэффициентов
+       //Вввод коэффициентов.
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Введите значение коффициента a: ");
