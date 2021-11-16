@@ -1,14 +1,18 @@
 package lesson3;
-
 //  Вычисление корней квадратного уравнения вида a * x^2 + b * x + c = 0
+
+import java.util.Scanner;
 
    public class RootsQuadraticEquation {
 
         public static void main(String[] args) {
-            int a = 6;
-            int b = -18;
-            int c = -168;
-
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Введите значение коффициента a: ");
+            double a = scanner.nextDouble();
+            System.out.print("Введите значение коффициента b: ");
+            double b = scanner.nextDouble();
+            System.out.print("Введите значение коффициента c: ");
+            double c = scanner.nextDouble();
             if (a==0) {
                 System.out.println("Первый коэффициент (a) не может быть 0");
             }
