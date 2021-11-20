@@ -12,7 +12,7 @@ public class FibonacciSequence {
     }
 
     public static int fibonacciCalculate(int number){
-        //Первое число последовательности Фибоначчи = 0.
+        //Первое число последовательности Фибоначчи = 0
         if(number == 1){
             return 0;
         }
@@ -20,7 +20,7 @@ public class FibonacciSequence {
         if(number == 2){
             return 1;
         }
-        //Вычисление других членов последовательности Фибоначчи. Их номер не меньше 3.
+        //Вычисление других членов последовательности Фибоначчи. Их номер не меньше 3
         return fibonacciCalculate(number-2) + fibonacciCalculate(number-1);
     }
 }
