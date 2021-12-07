@@ -1,7 +1,5 @@
 package lesson10;
 
-import lesson9.Automobile;
-
 import java.util.Scanner;
 
 public class CurrencyConverter {
