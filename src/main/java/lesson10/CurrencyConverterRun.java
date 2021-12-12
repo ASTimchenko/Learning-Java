@@ -2,7 +2,7 @@ package lesson10;
 
 import java.util.Scanner;
 
-public class CurrencyConverter {
+public class CurrencyConverterRun {
 
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class CurrencyConverter {
 
 
         int currencyIsChanged = getNumberIsChanged();
-        int currencyForChanged = NumberForChanged(currencyIsChanged);
+        int currencyForChanged = getNumberForChanged(currencyIsChanged);
         double currencyValue = getValue();
 
         if (currencyIsChanged == 1) {
@@ -59,7 +59,7 @@ public class CurrencyConverter {
         return number;
     }
 
-    private static int NumberForChanged(int currencyIsChanged) {
+    private static int getNumberForChanged(int currencyIsChanged) {
         System.out.print("Введите номер валюты, в которую будем конвентировать: 1, 2, 3 или 4: ");
         Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNextInt()) {
@@ -70,16 +70,16 @@ public class CurrencyConverter {
         int number = scanner.nextInt();
         if (number < 1) {
             System.out.printf("Вы указали значение %d, которое недопустимо в программе\n", number);
-            return NumberForChanged(currencyIsChanged);
+            return getNumberForChanged(currencyIsChanged);
         }
         if (number > 4) {
             System.out.printf("Вы указали значение %d, которое недопустимо в программе\n", number);
-            return NumberForChanged(currencyIsChanged);
+            return getNumberForChanged(currencyIsChanged);
         }
 
         if (number == currencyIsChanged) {
             System.out.println("Вы указали одну и ту же валюту");
-            return NumberForChanged(currencyIsChanged);
+            return getNumberForChanged(currencyIsChanged);
         }
         return number;
     }
