@@ -12,7 +12,7 @@ public class Logger implements Runnable {
 
     private static final String FORMAT_TEXT = "%s %s %s %s\n";
     private static final DateTimeFormatter FULL_DATE_TIME_FORMAT = DateTimeFormatter.ofPattern("dd.MM.yyyy HH:mm:ss");
-    private static final int LIFETIME = 7_000; //60 * 1000;
+    private static final int LIFETIME = 60 * 1000;
 
     private final LogLevel level;
     private final String fileName;
